@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00092c;
+}
+
+.calendar{
+    position: relative;
+    width: 260px;
+}
+
+.calendar::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    box-shadow: 206px 208px #C0EEE4, -35px 80px #F8F988;
+    border-radius: 50%;
+
+}
+
+.calendar .calendar-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-bottom: 10px solid #ff5f00;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+.calendar .calendar-body .month-name{
+    color: #fff;
+    background:#ff5f00 ;
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.calendar .calendar-body .day-name{
+    color: #ffff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.calendar .calendar-body .date-number{
+    color: #ffff;
+    font-size: 6em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.calendar .calendar-body .year{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
