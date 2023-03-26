@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181D31;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    background-color: rgb(0, 9, 44);
+    border-radius: 20px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.base {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+}
+.block {
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.base h4 {
+    font-size: 26px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    background: rgb(255, 95, 0);
+    font-size: 34px;
+    color: rgb(0, 9, 44);
+}
+
+.enter h4{
+    border-radius: 15px 0px 15px 0;
+    margin-bottom: 5px;
+}
+.title {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #ffffff;
+}
+input[type="text"] {
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    background-color: rgb(255, 95, 0);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border-radius: 10px;
+}
+input[type="text"]:focus {
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 95, 0);
+    outline: none;
+}
+input[type="button"] {
+    width: 150px;
+    margin-left: 35%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(255, 95, 0);
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgba(252, 252, 252, 0.911);
+}
+input[type="button"]:hover {
+    background-color: rgb(5, 19, 77);
+    opacity: 0.5;
+}
+
+input[type="text"] ::placeholder{
+    color: #ffffff;
+}
+#age {
+    display: block;
+    margin: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

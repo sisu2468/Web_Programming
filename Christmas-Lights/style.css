@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #00092c;
+    overflow: hidden;
+}
+
+ul{
+ position: absolute;    
+ width: 100%;
+ margin: 20px 0 0;
+ padding: 0;
+ border-top: 2px solid #777;
+ display: flex;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    top: -20px;
+    height: 40px;
+    width: 24px;
+    border-radius: 50%;
+    background:rgba(255, 255, 255, .1);
+    margin: 25px;
+    z-index: 1;
+}
+
+ul li:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    background: #444;
+    top: -7px;
+    left: 7px; 
+}
+
+ul li:after{
+    content: '';
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    border-bottom: 2px solid #444;
+    border-radius: 50%;
+   top: -24px;
+   left: 12px;
+}
+
+ul li:last-child:after{
+    border-bottom: none;
+ }
+
+ul li:nth-child(4n+1){
+    background: rgba(255, 255, 0, 1);
+    animation: animate1 1.5s linear infinite;
+}
+
+@keyframes animate1{
+   0%{
+    background: rgba(255, 255, 0, .2);
+   }
+
+   50%{
+    background: rgba(255, 255, 0, 1);
+    box-shadow: 0 0 25px rgba(255, 255, 0, 1),
+                0 0 45px rgba(255, 255, 0, 1);
+   }
+
+   100%{
+    background: rgba(255, 255, 0, .2);
+   }
+}
+
+ul li:nth-child(4n+2){
+    background: rgba(255, 255, 0, 1);
+    animation: animate2 1.5s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate2{
+   0%{
+    background: rgba(6, 111, 231, .2);
+   }
+
+   50%{
+    background: rgb(6, 111, 231, 1);
+    box-shadow: 0 0 25px rgba(6, 111, 231, 1),
+                0 0 45px rgba(6, 111, 231, 1);
+   }
+
+   100%{
+    background: rgba(255, 0, 255, .2);
+   }
+}
+
+
+ul li:nth-child(4n+3){
+    background: rgb(255, 0, 0, 1);
+    animation: animate3 1.5s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3{
+   0%{
+    background: rgba(255, 0, 0, .2);
+   }
+
+   50%{
+    background: rgba(255, 0, 0, 1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1),
+                0 0 45px rgba(255, 0, 0, 1);
+   }
+
+   100%{
+    background: rgba(255, 0, 255, .2);
+   }
+}
+
+ul li:nth-child(4n+4){
+    background: rgb(63, 238, 10, 1);
+    animation: animate4 1.5s linear infinite;
+    animation-delay: .8s;
+}
+
+@keyframes animate4{
+   0%{
+    background: rgba(63, 238, 10, .2);
+   }
+
+   50%{
+    background: rgba(63, 238, 10, 1);
+    box-shadow: 0 0 25px rgba(63, 238, 10, 1),
+                0 0 45px rgba(63, 238, 10, 1);
+   }
+
+   100%{
+    background: rgba(255, 0, 255, .2);
+   }
+}

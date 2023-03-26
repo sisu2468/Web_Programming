@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>10K Subscribers Special | With Circle Burst Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="text-container">
+      <h1>10K<br /><span>Followers</span></h1>
+      <div class="animated-text">
+        <h2>Thank you!</h2>
+        <h2>ধন্যবাদ!</h2>
+        <h2>شكرًا لك</h2>
+      </div>
+    </div>
+    <div class="animation-container">
+      <div class="burst">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <script>
+      function createBurst() {
+        let animContainer = document.querySelector('.animation-container')
+        let burst = document.querySelector('.burst')
+
+        burst.style.top = Math.random() * 550 + 'px'
+        burst.style.left = Math.random() * 750 + 'px'
+
+        let burstClone = burst.cloneNode(true)
+        animContainer.appendChild(burstClone)
+
+        setTimeout(() => {
+          burstClone.remove()
+        }, 20000)
+      }
+      setInterval(createBurst, 2000)
+    </script>
+  </body>
+</html>
