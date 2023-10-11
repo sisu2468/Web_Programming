@@ -1,0 +1,39 @@
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+.login-form{
+    width: 650px;
+    background: rgba(0,0,0,.4);
+    margin: 100px auto;
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+.login-form input{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid black;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+}
+.login-form label{
+    color: white;
+    cursor: pointer;
+    padding: 5px 0;
+    display: block;
+    font-size: 20px;
+    font-family: tahoma;
+}
+.login-form input[type=submit]{
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.login-form p{
+    color: white;
+    font-size: 17px;
+    font-family: tahoma;
+}
